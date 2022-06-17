@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <EditText
+            android:id="@+id/edtNumbOfViews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter"
+            android:textSize="24dp"
+            android:layout_weight="10"
+            >
+
+        </EditText>
+        <Button
+            android:id="@+id/btnDraw"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="draw"
+            android:textSize="24dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#6E7171"
+            android:layout_weight="1">
+
+        </Button>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtPer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+    </TextView>
+    <ProgressBar
+        android:id="@+id/pgbShow"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="30dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:backgroundTint="#FFC107"
+        android:layout_margin="10dp"
+        >
+    </ProgressBar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
